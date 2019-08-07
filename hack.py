@@ -24,7 +24,7 @@ def jalan(z):
         time.sleep(0.01)
 
 
-logo = ' Tools Hack Facebook \n\x1b[1;93m Author    : Ac3p_Cyb3r \n\x1b[1;93m My Team.  : Mouse Cyber Security \n\x1b[1;93m Thanks To : Jomer Pogi'
+logo = ' Tools Hack Facebook \n\x1b[1;93m Author    : Ac3p_Cyb3r \n\x1b[1;93m My Team.  : Mouse Cyber Security \n\x1b[1;93m Thanks To : JUVEEEEEEEEEEEEEEEEEEEELLE'
 def tik():
     titik = [
      '.   ', '..  ', '... ']
