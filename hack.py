@@ -13,7 +13,7 @@ br.set_handle_refresh(mechanize._http.HTTPRefreshProcessor(), max_time=1)
 br.addheaders = [('User-Agent', 'Opera/9.80 (Android; Opera Mini/32.0.2254/85. U; id) Presto/2.12.423 Version/12.16')]
 
 def keluar():
-    print '\x1b[1;91m[!] Keluar'
+    print '\x1b[1;91m[!] Quitting'
     os.sys.exit()
 
 
@@ -29,7 +29,7 @@ def tik():
     titik = [
      '.   ', '..  ', '... ']
     for o in titik:
-        print '\r\x1b[1;91m[\xe2\x97\x8f] \x1b[1;92mSedang Masuk Mang \x1b[1;97m' + o,
+        print '\r\x1b[1;91m[\xe2\x97\x8f] \x1b[1;92mLoading ...\x1b[1;97m' + o,
         sys.stdout.flush()
         time.sleep(1)
 
