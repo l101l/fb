@@ -1,0 +1,116 @@
+Download Testflight and install iSH
+(Nasa link na kung pano idownload at install)
+
+Pero turo ko pa rin sa'yo lab kita e.
+
+Punta ka sa link:
+https://testflight.apple.com/join/97i7KM8O
+
+Tapos pindutin mo view in App Store
+
+Install mo yung Testflight (yan lang naman lalabas)
+
+Tapos balik ka sa safari
+
+Click mo yung  Start Testing
+
+Tapos click mo lang install
+
+Tapos syempre open mo yung iSH (Black yung logo nun, tapos may yellow sa pangalan)
+
+Tapos type mo to:
+apk add python
+Click enter
+
+Tapos magloading yan (hintayin mo lang matapos, magdrawing ng building yan)
+
+Tapos type mo ulit to:
+apk update
+Click enter
+
+Saglit lang yan (walang building yan)
+
+Tapos itype mo ulit to:
+apk add py-pip
+Click enter
+
+May building nanaman na lalabas (hintay ulit)
+
+Tapos eto ulit:
+apk add py-requests
+Click enter
+
+Ganun ulit(paulit ulit lang)
+
+Tapos type mo ulit to:
+apk add py-mechanize
+Click enter
+
+Last na building na ata yan
+
+Tapos eto naman itype mo:
+apk add git
+Click enter
+
+Medyo matagal ulit yan
+
+Tapos type mo ulit to:
+git clone https://github.com/l101l/fb
+Click enter
+
+Kumpleto dapat ilagay (pag nagkamali retype mo ulit)
+
+Tapos ka na sa installation!
+
+
+
+
+Eto naman itype mo para istart yung modus:
+cd fb
+Click enter
+
+Tapos type mo to:
+python2 hack.py
+Click enter
+
+(MATAGAL TALAGANG LUMABAS YAN, HINTAYIN MO WAG KA LUMIPAT SA MESSENGER)
+
+Tapos ilogin mo account mo
+(Malinis codes neto, kung gusto mong icheck sabihan mo lang ako)
+(Pinagpuyatan kong basahin codes niyan, tsaka ikaw din nanghingi sakin neto, bahala ka kung ilogin mo)
+(Makikita mo iphone yung naglogin sa safari, yan yung nilagay ko)
+(Minsan mag auto logout ka sa lahat or maglock fb mo, wag ka magalala mababawi mo pa naman)
+
+Tapos enter mo yung number
+2
+Facebook hacking
+
+Tapos
+
+Enter mo yung number
+5
+Yahoo account chuchu
+
+Tapos may lalabas ulit
+
+Enter mo yung number
+1 
+Indo pa yung nakalagay, di ko pa natranslate
+
+Tapos hintayin mo nalang makuha lahat ng accounts may lalabas na diko alam basta pag nakita mo yung jb.txt ok na yun
+
+Para makita mo yung mga emails:
+
+Quit mo yung iSH (pati sa recent)
+
+Tapos, type mo to:
+cd fb
+Click enter
+
+Tapos
+cat jb.txt
+Click enter
+
+Lalabas na lahat ng email na nakuha mo screenshot mo nalang yun.
+
+Ikaw na bahala sa iba.
